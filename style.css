@@ -1986,3 +1986,374 @@ textarea {
     }
 
 }
+
+/* ================= DYNAMIC COMPONENTS ================= */
+
+/* Dashboard schedule */
+
+.dashboard-schedule-item,
+.dashboard-task-item {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    padding: 13px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.dashboard-schedule-item:last-child,
+.dashboard-task-item:last-child {
+    border-bottom: none;
+}
+
+.schedule-time {
+    min-width: 65px;
+    display: flex;
+    flex-direction: column;
+}
+
+.schedule-time strong {
+    font-size: 12px;
+    color: var(--primary);
+}
+
+.schedule-time span {
+    font-size: 10px;
+    color: var(--text-secondary);
+}
+
+.schedule-item-info,
+.task-item-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.schedule-item-info h4,
+.task-item-info h4 {
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.schedule-item-info p,
+.task-item-info p {
+    font-size: 10px;
+}
+
+
+/* Schedule entries */
+
+.schedule-day-group {
+    margin-bottom: 24px;
+}
+
+.schedule-day-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 11px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 10px;
+}
+
+.schedule-day-heading h3 {
+    color: var(--primary-dark);
+}
+
+.schedule-day-heading span {
+    color: var(--text-secondary);
+    font-size: 10px;
+}
+
+.schedule-entry {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 14px;
+    margin-bottom: 9px;
+
+    background: var(--surface-soft);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.schedule-entry-time {
+    display: flex;
+    flex-direction: column;
+    min-width: 65px;
+}
+
+.schedule-entry-time strong {
+    color: var(--primary);
+    font-size: 12px;
+}
+
+.schedule-entry-time span {
+    color: var(--text-secondary);
+    font-size: 10px;
+}
+
+.schedule-entry-details {
+    flex: 1;
+    min-width: 0;
+}
+
+.schedule-entry-details h4 {
+    font-size: 12px;
+}
+
+.schedule-entry-details p,
+.schedule-entry-details small {
+    font-size: 10px;
+    color: var(--text-secondary);
+}
+
+.schedule-week-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* Task cards */
+
+.task-card {
+    padding: 16px;
+
+    background: var(--surface-soft);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.task-card-main,
+.task-card-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.task-card-main {
+    align-items: flex-start;
+}
+
+.task-card-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.task-card-info h4 {
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+
+.task-card-info p,
+.task-card-info small {
+    display: block;
+    font-size: 10px;
+    color: var(--text-secondary);
+}
+
+.task-card-bottom {
+    border-top: 1px solid var(--border);
+    padding-top: 12px;
+    margin-top: 13px;
+}
+
+.task-deadline {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    font-size: 10px;
+    color: var(--text-secondary);
+}
+
+.task-deadline svg {
+    width: 14px;
+    height: 14px;
+}
+
+.task-card-actions,
+.item-actions {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.task-card-actions .icon-button,
+.item-actions .icon-button {
+    width: 32px;
+    height: 32px;
+}
+
+.task-card-actions .icon-button svg,
+.item-actions .icon-button svg {
+    width: 15px;
+    height: 15px;
+}
+
+.task-status-select {
+    max-width: 125px;
+    padding: 7px 8px;
+
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+
+    font-size: 10px;
+}
+
+.task-priority {
+    display: inline-block;
+    flex-shrink: 0;
+
+    padding: 5px 9px;
+    border-radius: 20px;
+
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.priority-low {
+    color: #559579;
+    background: #E5F4EC;
+}
+
+.priority-medium {
+    color: #B47B3D;
+    background: #FBF0E5;
+}
+
+.priority-high {
+    color: #C36D7B;
+    background: #FBECEF;
+}
+
+
+/* Weekly chart */
+
+.weekly-bars {
+    width: 100%;
+    height: 160px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.weekly-bar-item {
+    height: 100%;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.weekly-bar-track {
+    height: 125px;
+    width: 100%;
+    max-width: 27px;
+
+    display: flex;
+    align-items: flex-end;
+
+    background: var(--primary-soft);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.weekly-bar-fill {
+    width: 100%;
+    min-height: 4px;
+
+    background: var(--primary);
+    border-radius: 8px 8px 0 0;
+    transition: height 0.3s ease;
+}
+
+.weekly-bar-item span {
+    font-size: 9px;
+    color: var(--text-secondary);
+}
+
+
+/* Goal heading */
+
+.goal-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+/* Timer history */
+
+.timer-history-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+
+    padding: 13px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.timer-history-item:last-child {
+    border-bottom: none;
+}
+
+.timer-history-item strong {
+    font-size: 11px;
+}
+
+.timer-history-item p {
+    font-size: 10px;
+}
+
+.timer-history-item > span {
+    color: var(--primary);
+    font-size: 10px;
+    font-weight: 700;
+}
+
+
+/* Dynamic mobile layout */
+
+@media (max-width: 480px) {
+
+    .schedule-entry {
+        gap: 9px;
+        padding: 11px;
+    }
+
+    .task-card-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .task-card-actions {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .task-status-select {
+        margin-right: auto;
+    }
+
+    .dashboard-schedule-item,
+    .dashboard-task-item {
+        gap: 9px;
+    }
+
+    .weekly-bars {
+        gap: 5px;
+    }
+
+}
