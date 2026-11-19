@@ -2370,3 +2370,50 @@ textarea {
     position: relative;
     z-index: 10;
 }
+
+/* =================================
+   STUDY TIMER DISPLAY FIX
+================================= */
+
+.timer-display {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.timer-circle {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.timer-circle h1#timer-display {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    color: #6D5A9E !important;
+    -webkit-text-fill-color: #6D5A9E !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 48px !important;
+    font-weight: 800 !important;
+    line-height: 1.2 !important;
+    text-align: center !important;
+    min-width: 150px;
+    margin: 0;
+    position: relative;
+    z-index: 99;
+}
+
+.timer-circle p#timer-status {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    color: #75639F !important;
+    text-align: center;
+    position: relative;
+    z-index: 99;
+}
