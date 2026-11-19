@@ -1737,3 +1737,16 @@ function initializeApp() {
 
 // Start StudyFlow
 document.addEventListener("DOMContentLoaded", initializeApp);
+function initializeApp() {
+    initializeNavigation();
+
+    loadSettings();
+
+    setTimerMode("focus");
+
+    updateTimerDisplay();
+
+    renderAll();
+
+    refreshIcons();
+}
