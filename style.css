@@ -2357,3 +2357,16 @@ textarea {
     }
 
 }
+/* FIX TIMER DISPLAY */
+#timer-display {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    color: #6D5A9E !important;
+    font-size: 48px !important;
+    font-weight: 800 !important;
+    text-align: center;
+    line-height: 1.2;
+    position: relative;
+    z-index: 10;
+}
